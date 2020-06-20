@@ -1,17 +1,12 @@
 import { ChartsComponent } from './components/charts/charts.component';
 import { ContactComponent } from './components/contact/contact.component';
-import { HomeComponent } from './components/home/home.component';
-import { NgModule, Component } from '@angular/core';
+import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 const routes: Routes = [
   {
-    path: 'home',
-    component: HomeComponent,
-  },
-  {
     path: '',
-    component: HomeComponent,
+    component: ChartsComponent,
   },
   {
     path: 'contact',
@@ -19,8 +14,8 @@ const routes: Routes = [
   },
   {
     path: 'chart',
-    component: ChartsComponent
-  }
+    component: ChartsComponent,
+  },
 ];
 
 @NgModule({
