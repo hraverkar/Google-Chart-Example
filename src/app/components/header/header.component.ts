@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
-  public title = 'Google Chart Example';
+  public title = 'Google-Chart';
   constructor() { }
 
   ngOnInit(): void { }

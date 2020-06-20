@@ -1,18 +1,21 @@
-<form [formGroup]="chartTypesForm" (ngSubmit)="onSubmit()">
+<div>
+  <form [formGroup]="chartTypesForm" (ngSubmit)="onSubmit()">
+    <select formControlName="name">
+      <option value="">Select chart type</option>
+      <option *ngFor="let chart of chartTypes">{{chart}}</option>
+    </select>
+    <div class="error-block" *ngIf="submitted && handleError('name', 'required')">
+      You must provide a value!
+    </div>
+    <button mat-raised-button>Submit</button>
+  </form>
+</div>
 
-  <select formControlName="name">
-    <option value="">Select chart type</option>
-    <option *ngFor="let chart of chartTypes">{{chart}}</option>
-  </select>
-
-  <div class="error-block" *ngIf="submitted && handleError('name', 'required')">
-    You must provide a value!
-  </div>
-
-  <button>Submit</button>
-</form>
-
-<google-chart [title]="title" [type]="type" [data]="data" [columns]="columnNames" [options]="options" [width]="width"
-  [height]="height">
-</google-chart>
-
+<div>
+  <mat-card>
+    <mat-card-title>Show Chart</mat-card-title>
+    <google-chart [title]="title" [type]="type" [data]="data" [columns]="columnNames" [options]="options"
+      [width]="width" [height]="height">
+    </google-chart>
+  </mat-card>
+</div>

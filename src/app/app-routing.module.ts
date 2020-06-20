@@ -9,12 +9,12 @@ const routes: Routes = [
     component: ChartsComponent,
   },
   {
-    path: 'contact',
-    component: ContactComponent,
-  },
-  {
     path: 'chart',
     component: ChartsComponent,
+  },
+  {
+    path: 'contact',
+    component: ContactComponent,
   },
 ];
 
