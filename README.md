@@ -2,6 +2,9 @@
 
 # Angular 9 Google Charts Example 
   Angular 9 google charts.
+  
+# Screenshot
+![Img1](https://raw.githubusercontent.com/hraverkar/Google-Chart-Example/master/screenshot/11.jpg)
 
 ## Tech Stack
 
